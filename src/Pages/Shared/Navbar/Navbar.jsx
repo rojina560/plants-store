@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { HiShoppingBag } from "react-icons/hi2";
 import { IoIosSearch } from 'react-icons/io';
+import { AuthContext } from '../../../Provider/AuthProvider';
 
 const Navbar = () => {
+  const {user,logOut} = useContext(AuthContext)
+  const handleLogout = () =>{
+    logOut()
+    .then(()=>{})
+    .catch(error =>{
+      console.log(error);
+    })
+  }
   const navLinks = <>
   <Link> Home
   </Link>
@@ -13,13 +22,13 @@ const Navbar = () => {
   </Link>
   <Link> Blog
   </Link>
-  <Link> Shop
+  <Link to={'/shop'}> Shop
   </Link>
   <Link> Contact
   </Link>
   </>
     return (
-        <div className="navbar bg-[#90a955] shadow-sm p-4">
+        <div className="navbar fixed z-10 bg-[#90a955] shadow-sm p-4">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn bg-[#31572c] border-none lg:hidden">
@@ -42,7 +51,8 @@ const Navbar = () => {
         <div className="navbar-end gap-4">
           <HiShoppingBag className='text-4xl'></HiShoppingBag>
           <IoIosSearch  className='text-4xl'></IoIosSearch>
-          <button className="btn border-none bg-[#31572c]">Login</button>
+          {user ? <button onClick={handleLogout} className="btn border-none bg-[#31572c]">logout</button>:<Link to={'/login'}>   <button className="btn border-none bg-[#31572c]">login</button></Link> }
+       
         </div>
       </div>
     );

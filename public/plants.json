@@ -1,0 +1,53 @@
+[
+    {
+      "image": "https://i.ibb.co.com/gLRP8wh4/aloe.jpg",
+      "name": "Monstera Deliciosa",
+      "price": 29.99
+    },
+    {
+      "image": "https://i.ibb.co.com/4wxJqpCg/phelodendron.jpg",
+      "name": "Snake Plant",
+      "price": 19.99
+    },
+    {
+      "image": "https://i.ibb.co.com/R4DjXPLk/ivender.jpg",
+      "name": "Peace Lily",
+      "price": 24.99
+    },
+    {
+      "image": "https://i.ibb.co.com/VYtWRkwK/calibrachoa.jpg",
+      "name": "Fiddle Leaf Fig",
+      "price": 34.99
+    },
+    {
+      "image": "https://i.ibb.co.com/ZRgwxf5b/flowerpot3.jpg",
+      "name": "ZZ Plant",
+      "price": 22.50
+    },
+    {
+      "image": "https://i.ibb.co.com/nG7Zbwc/flowerpot.jpg",
+      "name": "Spider Plant",
+      "price": 14.99
+    },
+    {
+      "image": "https://i.ibb.co.com/nMt4JmNg/ornamentaltree1.jpg",
+      "name": "Golden Pothos",
+      "price": 16.75
+    },
+    {
+      "image": "https://i.ibb.co.com/nG7Zbwc/flowerpot.jpg",
+      "name": "Rubber Plant",
+      "price": 27.00
+    },
+    {
+      "image": "https://i.ibb.co.com/S4xThM1c/cactus.jpg",
+      "name": "Boston Fern",
+      "price": 18.25
+    },
+    {
+      "image": "https://i.ibb.co.com/MkRqWfMp/ornamentaltree1.jpg",
+      "name": "Aloe Vera",
+      "price": 13.99
+    }
+  ]
+  
