@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from 'react';
+
+import {useQuery} from "@tanstack/react-query"
+import useAxiosPublic from './useAxiosPublic';
 
 const usePlants = () => {
-    const [plants,setPlants] = useState([])
-    const [loading,setLoading] = useState(true)
-    useEffect(()=>{
-        fetch('http://localhost:5000/plants')
-        .then(res => res.json())
-        .then(data => {
-            setPlants(data)
-    setLoading(true)
-        })
-    },[])
-    console.log(plants);
-    return[ plants,loading]
+   const axiosPublic = useAxiosPublic()
+   const {data: plants = []} = useQuery({
+    queryKey:['plants'],
+    queryFn: async ()=>{
+        const res = await axiosPublic.get('/plants')
+        return res.data
+    }
+   })
+   return[plants]
+   
 };
 
 export default usePlants;

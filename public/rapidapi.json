@@ -1,0 +1,355 @@
+[
+    {
+      "Categories": "Fern",
+      "Common name (fr.)": "Capilaire",
+      "Img": "http://www.tropicopia.com/house-plant/thumbnails/5437.jpg",
+      "Zone": [
+        "10",
+        "8"
+      ],
+      "Family": "Polypodiaceae",
+      "Common name": [
+        "Maindenhair",
+        "Delta maidenhair"
+      ],
+      "Latin name": "Adiantum raddianum",
+      "Other names": "cuneatum",
+      "Description": null,
+      "Origin": [
+        "Brazil"
+      ],
+      "id": "6fcfb288-5a1f-53aa-ba7d-fcad91b11aab",
+      "Climat": "Tropical"
+    },
+    {
+      "Categories": "Fern",
+      "Common name (fr.)": "Fougère de Boston",
+      "Img": "http://www.tropicopia.com/house-plant/thumbnails/5668.jpg",
+      "Zone": [
+        "11-10"
+      ],
+      "Family": "Nephrolepidaceae",
+      "Common name": [
+        "Boston fern",
+        "Sword fern"
+      ],
+      "Latin name": "Nephrolepis exaltata var.",
+      "Other names": null,
+      "Description": null,
+      "Origin": [
+        "Cultivar"
+      ],
+      "id": "171368f9-fff3-5d5a-8bcd-03cd157f32fc",
+      "Climat": "Tropical"
+    },
+    {
+      "Categories": "Fern",
+      "Common name (fr.)": "Pteris dentelle d'argent",
+      "Img": "http://www.tropicopia.com/house-plant/thumbnails/5720.jpg",
+      "Zone": [
+        "10-9"
+      ],
+      "Family": "Pteridaceae",
+      "Common name": [
+        "Silver Lace Fern"
+      ],
+      "Latin name": "Pteris ensiformis 'Evergemiensis'",
+      "Other names": null,
+      "Description": null,
+      "Origin": [
+        "Asia"
+      ],
+      "id": "69bd6c60-3ad9-5a31-8860-25565e374b26",
+      "Climat": "Tropical humid"
+    },
+    {
+      "Categories": "Fern",
+      "Common name (fr.)": null,
+      "Img": "http://www.tropicopia.com/house-plant/thumbnails/5717.jpg",
+      "Zone": [
+        "10",
+        "7"
+      ],
+      "Family": "Dryopteridaceae",
+      "Common name": [
+        "Korean rock fern",
+        "Tsu-sima holly fern"
+      ],
+      "Latin name": "Polystichum tsus-simense",
+      "Other names": "Aspidium",
+      "Description": null,
+      "Origin": [
+        "Korea"
+      ],
+      "id": "0a0e8ea3-b199-5f0b-a86e-6eaf01b766b5",
+      "Climat": "Subtropical"
+    },
+    {
+      "Categories": "Fern",
+      "Common name (fr.)": "Pteris de crête",
+      "Img": "http://www.tropicopia.com/house-plant/thumbnails/5719.jpg",
+      "Zone": [
+        "10-9"
+      ],
+      "Family": "Pteridaceae",
+      "Common name": [
+        "Cretan brake"
+      ],
+      "Latin name": "Pteris cretica 'Parkeri'",
+      "Other names": null,
+      "Description": null,
+      "Origin": [
+        "Cultivar"
+      ],
+      "id": "bd30f0a0-7646-5356-bfc6-be14a083dc53",
+      "Climat": "Tropical humid"
+    },
+    {
+      "Categories": "Fern",
+      "Common name (fr.)": "Corne d'Élan, Bois de cerf",
+      "Img": "http://www.tropicopia.com/house-plant/thumbnails/5698.jpg",
+      "Zone": [
+        "11",
+        "9"
+      ],
+      "Family": "Polypodiaceae",
+      "Common name": [
+        "Staghorn fern"
+      ],
+      "Latin name": "Platycerium bifurcatum",
+      "Other names": "Platycerium alcicorne",
+      "Description": null,
+      "Origin": [
+        "Australia"
+      ],
+      "id": "2f764797-27eb-56ae-a4e3-04ae90001c65",
+      "Climat": "Tropical"
+    },
+    {
+      "Categories": "Fern",
+      "Common name (fr.)": "Fougère houx",
+      "Img": "http://www.tropicopia.com/house-plant/thumbnails/5541.jpg",
+      "Zone": [
+        "11",
+        "8"
+      ],
+      "Family": "Dryopteridaceae",
+      "Common name": [
+        "Holly-fern"
+      ],
+      "Latin name": "Cyrtomium falcatum",
+      "Other names": null,
+      "Description": null,
+      "Origin": [
+        "Asia"
+      ],
+      "id": "158213c8-fa77-518d-ad5f-aae874a7e609",
+      "Climat": "Subtropical"
+    },
+    {
+      "Categories": "Fern",
+      "Common name (fr.)": null,
+      "Img": "http://www.tropicopia.com/house-plant/thumbnails/5677.jpg",
+      "Zone": [
+        "10-11"
+      ],
+      "Family": "Sinopteridaceae",
+      "Common name": null,
+      "Latin name": "Pellaea falcata",
+      "Other names": null,
+      "Description": null,
+      "Origin": [
+        "Australia",
+        "New Guinea"
+      ],
+      "id": "4343058e-f6ff-50dd-8952-9902e273222f",
+      "Climat": "Tropical"
+    },
+    {
+      "Categories": "Fern",
+      "Common name (fr.)": "Fougère de Boston",
+      "Img": "http://www.tropicopia.com/house-plant/thumbnails/5666.jpg",
+      "Zone": [
+        "11-10"
+      ],
+      "Family": "Nephrolepidaceae",
+      "Common name": [
+        "Boston fern",
+        "Sword fern"
+      ],
+      "Latin name": "Nephrolepis exaltata var.",
+      "Other names": null,
+      "Description": null,
+      "Origin": [
+        "Cultivar"
+      ],
+      "id": "f77d97bd-b719-56e7-8b75-68ae945837ec",
+      "Climat": "Tropical"
+    },
+    {
+      "Categories": "Fern",
+      "Common name (fr.)": "Patte de lapin, Patte d'cureuil",
+      "Img": "http://www.tropicopia.com/house-plant/thumbnails/5542.jpg",
+      "Zone": [
+        "11-10"
+      ],
+      "Family": "Davalliaceae",
+      "Common name": [
+        "Rabbit's foot",
+        "Squirrel's foot"
+      ],
+      "Latin name": "Davallia trichomannoides",
+      "Other names": "Davallia canariensis",
+      "Description": null,
+      "Origin": [
+        "Canaries"
+      ],
+      "id": "d77224c0-b78c-5446-a48e-e9e4862cf9ba",
+      "Climat": "Tropical"
+    },
+    {
+      "Categories": "Fern",
+      "Common name (fr.)": "Capillaire rose",
+      "Img": "http://www.tropicopia.com/house-plant/thumbnails/5436.jpg",
+      "Zone": [
+        "10",
+        "8"
+      ],
+      "Family": "Polypodiaceae",
+      "Common name": [
+        "Rosy Maidenhair",
+        "Autralian maidenhair"
+      ],
+      "Latin name": "Adiantum hispidulum",
+      "Other names": null,
+      "Description": null,
+      "Origin": [
+        "Australia",
+        "New Guinea"
+      ],
+      "id": "ddb797fe-66f1-5737-9097-a1ef55bc2509",
+      "Climat": "Tropical"
+    },
+    {
+      "Categories": "Fern",
+      "Common name (fr.)": "Fougère arborescente miniature",
+      "Img": "http://www.tropicopia.com/house-plant/thumbnails/5500.jpg",
+      "Zone": [
+        "11-10"
+      ],
+      "Family": "Polypodiaceae",
+      "Common name": [
+        "Miniature treefern",
+        "Dwarf treefern"
+      ],
+      "Latin name": "Blechnum gibbum",
+      "Other names": null,
+      "Description": null,
+      "Origin": [
+        "New Calidonia"
+      ],
+      "id": "290f43b2-1261-5865-9a00-878870ebf885",
+      "Climat": "Tropical humid"
+    },
+    {
+      "Categories": "Fern",
+      "Common name (fr.)": "Cappilaire arborescente",
+      "Img": "http://www.tropicopia.com/house-plant/thumbnails/5543.jpg",
+      "Zone": [
+        "11",
+        "9"
+      ],
+      "Family": "Dryopteridaceae",
+      "Common name": [
+        "Tree Maindenhair fern"
+      ],
+      "Latin name": "Didymochlaena truncatula",
+      "Other names": null,
+      "Description": null,
+      "Origin": null,
+      "id": "51342f58-7ed4-543c-ad74-fcbb3b593e6d",
+      "Climat": "Tropical humid"
+    },
+    {
+      "Categories": "Fern",
+      "Common name (fr.)": "Fougère nid d'oiseaux",
+      "Img": "http://www.tropicopia.com/house-plant/thumbnails/5499.jpg",
+      "Zone": [
+        "11-10"
+      ],
+      "Family": "Aspleniaceae",
+      "Common name": [
+        "Birdnest fern"
+      ],
+      "Latin name": "Asplenium nidus",
+      "Other names": null,
+      "Description": null,
+      "Origin": [
+        "Asia"
+      ],
+      "id": "5d34239e-5668-5d1a-b70d-ef2eb513ee6c",
+      "Climat": "Tropical humid"
+    },
+    {
+      "Categories": "Fern",
+      "Common name (fr.)": "Fougère de Boston",
+      "Img": "http://www.tropicopia.com/house-plant/thumbnails/5667.jpg",
+      "Zone": [
+        "11-10"
+      ],
+      "Family": "Nephrolepidaceae",
+      "Common name": [
+        "Boston fern",
+        "Sword fern"
+      ],
+      "Latin name": "Nephrolepis exaltata var.",
+      "Other names": null,
+      "Description": null,
+      "Origin": [
+        "Cultivar"
+      ],
+      "id": "dd45a1fb-9a22-5fd7-94b4-7430830dd2f2",
+      "Climat": "Tropical"
+    },
+    {
+      "Categories": "Fern",
+      "Common name (fr.)": "Pteris Ruban d'argent",
+      "Img": "http://www.tropicopia.com/house-plant/thumbnails/5718.jpg",
+      "Zone": [
+        "10-9"
+      ],
+      "Family": "Pteridaceae",
+      "Common name": [
+        "Silver Ribbon Fern"
+      ],
+      "Latin name": "Pteris cretica 'Albo-lineata'",
+      "Other names": null,
+      "Description": null,
+      "Origin": [
+        "Cultivar"
+      ],
+      "id": "606a5619-5cdb-5ca3-9397-9175c4e350ba",
+      "Climat": "Tropical humid"
+    },
+    {
+      "Categories": "Fern",
+      "Common name (fr.)": "Fougère barbue",
+      "Img": "http://www.tropicopia.com/house-plant/thumbnails/5716.jpg",
+      "Zone": [
+        "10",
+        "6"
+      ],
+      "Family": "Dryopteridaceae",
+      "Common name": [
+        "Japanese tassel fern"
+      ],
+      "Latin name": "Polystichum polyblepharum",
+      "Other names": "Polystichum setosum",
+      "Description": null,
+      "Origin": [
+        "Japan"
+      ],
+      "id": "cac107d7-fe75-52cb-a7a0-23efc6fca516",
+      "Climat": "Subtropical"
+    }
+  ]

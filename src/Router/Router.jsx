@@ -4,6 +4,8 @@ import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PlantShop from "../Pages/PlantShop/PlantShop";
+import PlantVeiwCart from "../Pages/PlantVeiwCart/PlantVeiwCart";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([{
     path: '/',
@@ -11,13 +13,20 @@ const router = createBrowserRouter([{
     children: [{
         path: '/',
         element: <Home></Home>,
-        loader: ()=>fetch('http://localhost:5000/plantsCount')
+        
 
     },
+
     {
         path: '/shop',
         element: <PlantShop></PlantShop>
 
+    },
+    {
+
+        path:'/plants/:id',
+        element: <PrivateRoute><PlantVeiwCart></PlantVeiwCart></PrivateRoute>,
+        loader: ({params}) =>fetch(`http://localhost:5000/plants/${params.id}`)
     },
 
     {

@@ -5,7 +5,7 @@ import Footer from '../Pages/Footer/Footer';
 
 const Layouts = () => {
     const location = useLocation()
-    const noHeaderFooter = location.pathname.includes('login') || location.pathname.includes('register')
+    const noHeaderFooter = location.pathname.includes('login') || location.pathname.includes('register') || location.pathname.includes('/plants/')
     return (
         <div>
           {noHeaderFooter || <Navbar></Navbar>}

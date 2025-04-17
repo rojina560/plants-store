@@ -1,11 +1,15 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { HiShoppingBag } from "react-icons/hi2";
+
 import { IoIosSearch } from 'react-icons/io';
 import { AuthContext } from '../../../Provider/AuthProvider';
+import { FaCartShopping } from "react-icons/fa6";
+import useCart from '../../../Hooks/useCart';
 
 const Navbar = () => {
   const {user,logOut} = useContext(AuthContext)
+  const [cart] = useCart()
+  console.log('this is cart',cart);
   const handleLogout = () =>{
     logOut()
     .then(()=>{})
@@ -24,8 +28,7 @@ const Navbar = () => {
   </Link>
   <Link to={'/shop'}> Shop
   </Link>
-  <Link> Contact
-  </Link>
+  
   </>
     return (
         <div className="navbar fixed z-10 bg-[#90a955] shadow-sm p-4">
@@ -49,7 +52,12 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end gap-4">
-          <HiShoppingBag className='text-4xl'></HiShoppingBag>
+        <Link>
+        <div className='flex items-center gap-1 p-2 '>
+        <button className='text-red-500 font-bold text-2xl'>+{cart.length}</button>
+        <FaCartShopping className='text-4xl'></FaCartShopping>
+        </div>
+        </Link>
           <IoIosSearch  className='text-4xl'></IoIosSearch>
           {user ? <button onClick={handleLogout} className="btn border-none bg-[#31572c]">logout</button>:<Link to={'/login'}>   <button className="btn border-none bg-[#31572c]">login</button></Link> }
        

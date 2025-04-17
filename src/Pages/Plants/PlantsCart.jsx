@@ -2,20 +2,27 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const PlantsCart = ({plant}) => {
-    const {image,price,name,_id} = plant || []
+    const {Img,price,Categories,_id, ["Common name (fr.)"]: commonNameFr} = plant || []
+    console.log(commonNameFr);
     return (
         <div>
-            <div className="card card-compact bg-base-100 w-96 shadow-xl">
+            <div className="card card-compact bg-base-100 max-w-96 mx-auto shadow-xl">
   <figure>
-    <img
-      src={image}
+    <img className='w-full h-[370px]'
+      src={Img}
       alt="Shoes" />
   </figure>
   <div className="card-body">
-    <h2 className="card-title">{name}</h2>
-    <div className="card-actions justify-end">
-   <Link>   <button className="btn btn-primary">Shop Now</button></Link>
+   <div className='flex justify-between items-center'>
+   <div className=''>
+    <h2 className="card-title">{commonNameFr}</h2>
+   
+    <h2 className="card-title">$ {price}</h2>
     </div>
+    <div className="card-actions justify-end">
+   <Link to={`/plants/${_id}`}><button className="btn bg-[#31572c]">Shop Now</button></Link>
+    </div>
+   </div>
   </div>
 </div>
 
