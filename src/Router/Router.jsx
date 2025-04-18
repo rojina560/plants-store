@@ -6,6 +6,8 @@ import Register from "../Pages/Register/Register";
 import PlantShop from "../Pages/PlantShop/PlantShop";
 import PlantVeiwCart from "../Pages/PlantVeiwCart/PlantVeiwCart";
 import PrivateRoute from "./PrivateRoute";
+import DashBoard from "../Layouts/DashBoard";
+import Cart from "../Pages/Dashborad/Cart/Cart";
 
 const router = createBrowserRouter([{
     path: '/',
@@ -39,5 +41,17 @@ const router = createBrowserRouter([{
         element: <Register></Register>
     }
 ]
-}])
+},
+{
+    path: 'dashboard',
+    element: <DashBoard></DashBoard>,
+    children:[
+        {
+            path: 'cart',
+            element: <Cart></Cart>
+
+        }
+    ]
+}
+])
 export default router

@@ -6,20 +6,20 @@ import useAxiosSecure from "../../Hooks/useAxiosSecure";
 
 const PlantViewCart = () => {
     const plants = useLoaderData();
-    const {Img,price,Categories,_id, ["Common name (fr.)"]: commonNameFr} = plants || {}
+    const {Img,Price,Categories,_id, ["Common name (fr.)"]: commonNameFr} = plants || {}
     const {user} = useContext(AuthContext)
     const navigate = useNavigate()
     const location = useLocation()
     const axiosSecure = useAxiosSecure()
-    const handlePlantAddCart = item =>{
+    const handlePlantAddCart = ()=>{
       if(user && user.email){       
-        // TODO: send data to the database;
+        //  send data to the database;
         const plantItem = {
           plantId: _id,
           email: user.email,
-          Img:
+          Img,
           commonNameFr,
-          price
+          Price
         }
         axiosSecure.post('/cart', plantItem)
         .then(res=>{
@@ -66,11 +66,11 @@ const PlantViewCart = () => {
    <div className='flex justify-between items-center'>
    <div className=''>
     <h2 className="card-title">{commonNameFr}</h2>
-    <h2 className="card-title">$ {price}</h2>
+    <h2 className="card-title">$ {Price}</h2>
     </div>
     <div className="card-actions justify-end">
-   <Link><button onClick={()=>handlePlantAddCart
-    (plants)} className="btn bg-[#31572c]">Add To Cart</button></Link>
+   <Link><button onClick={handlePlantAddCart
+    } className="btn bg-[#31572c]">Add To Cart</button></Link>
     </div>
    </div>
   </div>

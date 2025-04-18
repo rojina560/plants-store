@@ -9,7 +9,6 @@ import useCart from '../../../Hooks/useCart';
 const Navbar = () => {
   const {user,logOut} = useContext(AuthContext)
   const [cart] = useCart()
-  console.log('this is cart',cart);
   const handleLogout = () =>{
     logOut()
     .then(()=>{})
@@ -52,9 +51,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end gap-4">
-        <Link>
+        <Link to={'dashboard/cart'}>
         <div className='flex items-center gap-1 p-2 '>
-        <button className='text-red-500 font-bold text-2xl'>+{cart.length}</button>
+        <span className="badge badge-md ">+{cart.length}</span>
         <FaCartShopping className='text-4xl'></FaCartShopping>
         </div>
         </Link>

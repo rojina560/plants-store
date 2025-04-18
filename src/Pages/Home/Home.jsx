@@ -8,8 +8,6 @@ import { useQuery } from '@tanstack/react-query';
 
 const Home = () => {
     const[plants] = usePlants()
-    
-    console.log(plants);
     const axiosPublic  = useAxiosPublic()
     const {data: count = 0 } = useQuery({
       queryKey: ['count'],
@@ -19,18 +17,16 @@ const Home = () => {
       }
       
     })
-    console.log(count);
     const [itemPerPages,setItemPerPages] = useState(5)
     const [currentPage , setCurrentPage] = useState(0)
    const numberOfPages = Math.ceil(count / itemPerPages)
-   console.log(numberOfPages);
+ 
 
 //    const pages = []
 //    for(let i = 0; i < numberOfPages; i ++){
 //     pages.push(i)
 //    }
      const pages = [...Array(numberOfPages).keys()];
-     console.log(pages);
      const handleItemPages = (e)=>{
         const val = parseInt(e.target.value);
         setItemPerPages(val)
