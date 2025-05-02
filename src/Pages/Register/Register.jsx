@@ -1,8 +1,14 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
+import useAxiosPublic from '../../Hooks/useAxiosPublic';
+import { Link, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import SocialLogin from '../../Components/SocialLogin/SocialLogin';
 
 const Register = () => {
   const {createUser} = useContext(AuthContext)
+  const axiosPublic = useAxiosPublic()
+  const navigate = useNavigate()
     const handleRegister = e =>{
         e.preventDefault()
         const form = e.target;
@@ -10,9 +16,23 @@ const Register = () => {
         const email = form.email.value;
         const password = form.password.value;
         console.log(email,password,name);
+        const userInfo = {name,email,}
         createUser(email,password)
         .then(result =>{
-          console.log(result.user);
+          axiosPublic.post('/user',userInfo)
+          .then(res => {
+           if(res.data.insertedId){
+            form.reset()
+            Swal.fire({
+              position: "top-end",
+              icon: "success",
+              title: "Your work has been saved",
+              showConfirmButton: false,
+              timer: 1500
+            });
+            navigate('/login')
+           }
+          })
         })
         .catch(error =>{
           console.log(error);
@@ -51,9 +71,13 @@ const Register = () => {
             </label>
           </div>
           <div className="form-control mt-6">
-            <button className="btn bg-[#31572c] border-none">register</button>
+            <button className="btn w-full bg-[#31572c] border-none">register</button> 
+           
           </div>
         </form>
+        <span className='text-white text-center'>  already have an account <Link to={'/login'} className='text-violet-800 underline'>login</Link></span>
+        <SocialLogin></SocialLogin>
+        
       </div>
     </div>
   </div>

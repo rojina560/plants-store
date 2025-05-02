@@ -50,7 +50,7 @@ const PlantViewCart = () => {
           }
         });
       }
-      console.log(item,user.email);
+      console.log(user.email);
 
     }
 

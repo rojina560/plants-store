@@ -8,6 +8,8 @@ import PlantVeiwCart from "../Pages/PlantVeiwCart/PlantVeiwCart";
 import PrivateRoute from "./PrivateRoute";
 import DashBoard from "../Layouts/DashBoard";
 import Cart from "../Pages/Dashborad/Cart/Cart";
+import AllUsers from "../Pages/Dashborad/AllUser/AllUsers";
+import AddItems from "../Pages/Dashborad/AddItems/AddItems";
 
 const router = createBrowserRouter([{
     path: '/',
@@ -46,9 +48,24 @@ const router = createBrowserRouter([{
     path: 'dashboard',
     element: <DashBoard></DashBoard>,
     children:[
+        // normal users
         {
             path: 'cart',
             element: <Cart></Cart>
+
+        },
+        // admin role
+        {
+            path:''
+
+        },
+        {
+            path: 'allUsers',
+            element: <AllUsers></AllUsers>
+        },
+        {
+            path: 'addItems',
+            element:<AddItems></AddItems>
 
         }
     ]

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 const PlantsCart = ({plant}) => {
     const {Img,Price,_id, ["Common name (fr.)"]: commonNameFr} = plant || []
-    console.log(plant);
     return (
         <div>
             <div className="card card-compact bg-base-100 max-w-96 mx-auto shadow-xl">

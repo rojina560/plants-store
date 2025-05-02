@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
-import { replace, useLocation, useNavigate } from 'react-router-dom';
+import { Link, replace, useLocation, useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const {login} = useContext(AuthContext)
@@ -48,9 +48,11 @@ const Login = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn bg-[#31572c] border-none">Login</button>
+          <button className="btn bg-[#31572c] border-none w-full">Login</button>
+          
         </div>
       </form>
+      <span className='text-white'>  Dont have an account please <Link to={'/register'} className='text-violet-800 underline'> Register</Link></span>
     </div>
   </div>
 </div>
